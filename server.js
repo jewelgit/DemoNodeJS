@@ -20,7 +20,7 @@ console.log(Buffer.compare(buf1, buf2));
 var http = require('http');
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'test/plain'});
-    res.write('Hello World');
+    res.write('Hello World!');
     res.end();
 }).listen(8080);
 
@@ -43,3 +43,4 @@ console.log("Architecture: " + os.arch());
 chalk = require('chalk');
 console.log(chalk.green('I am a green line' +
 chalk.blue.underline.bold(' with a blue substring') +' that becomes green again!'));
+console.log('Good Bye');
